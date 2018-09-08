@@ -37,6 +37,8 @@ public class AttendController {
          * @auther: fanbopeng
          * @date: 2018/9/6 13:39
          */
+        System.out.println("进入");
+
         return "attend";
     }
 

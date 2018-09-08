@@ -32,6 +32,7 @@ public class UserController {
    * @auther: fanbopeng
    * @date: 2018/9/6 12:10
    */
+        System.out.println("userController");
 
         return "home";
     }
