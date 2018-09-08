@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>范伯鹏考勤 注册界面</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="/static/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/static/dist/css/AdminLTE.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="/static/plugins/iCheck/square/blue.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="hold-transition login-page">
+
+<div class="login-box">
+    <div class="login-logo">
+        <b>范伯鹏考勤注册界面</b>
+    </div>
+    <!-- /.login-logo -->
+    <div class="login-box-body">
+        <p class="login-box-msg">请您注册</p>
+
+    <form id="register" action="/login/register" method="post">
+        <div class="form-group has-feedback">
+            <input id="user"  name="username"  type="text" class="form-control" placeholder="用户名">
+            <span class="fa fa-fw fa-user form-control-feedback"></span>
+            <span id="user_alert" style="color: red;visibility: hidden">请输入帐号</span>
+        </div>
+        <div class="form-group has-feedback">
+            <input id="pwd"  name="password" type="password" class="form-control" placeholder="密码">
+            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+            <span id="pwd_alert" style="color: red;visibility: hidden">请输入密码</span>
+        </div>
+
+        <input type="submit" value="提交" class="form-control"><br>
+    </form>
+        <div class="row">
+
+            <!-- /.col -->
+##            <div class="col-xs-4">
+##                <button id="submitId" type="button" class="btn btn-primary btn-block btn-flat"><a href="login.vm">直接登录</button>
+##            </div>
+
+
+            <!-- /.col -->
+        </div>
+
+
+
+    </div>
+    <!-- /.login-box-body -->
+</div>
+<!-- /.login-box -->
+
+<!-- jQuery 2.2.3 -->
+<script src="/static/jquery/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="/static/bootstrap/js/bootstrap.min.js"></script>
+<!-- iCheck -->
+<script src="/static/plugins/iCheck/icheck.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:tns="http://www.activiti.org/testm1536322248856" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" expressionLanguage="http://www.w3.org/1999/XPath" id="m1536322248856" name="" targetNamespace="http://www.activiti.org/testm1536322248856" typeLanguage="http://www.w3.org/2001/XMLSchema">
+  <process id="re_attend" isClosed="false" isExecutable="true" name="补签工作�?" processType="None">
+    <startEvent id="re_attend_start" name="补签工作流启�?"/>
+    <userTask activiti:exclusive="true" id="re_attend_approve" name="组长审批"/>
+    <endEvent id="re_attend_end" name="补签工作流结�?"/>
+    <sequenceFlow id="_6" sourceRef="re_attend_approve" targetRef="re_attend_end"/>
+    <userTask activiti:exclusive="true" id="re_attend_user" name="员工补签"/>
+    <sequenceFlow id="_3" sourceRef="re_attend_start" targetRef="re_attend_user"/>
+    <sequenceFlow id="_4" sourceRef="re_attend_user" targetRef="re_attend_approve"/>
+  </process>
+  <bpmndi:BPMNDiagram documentation="background=#3C3F41;count=1;horizontalcount=1;orientation=0;width=842.4;height=1195.2;imageableWidth=832.4;imageableHeight=1185.2;imageableX=5.0;imageableY=5.0" id="Diagram-_1" name="New Diagram">
+    <bpmndi:BPMNPlane bpmnElement="re_attend">
+      <bpmndi:BPMNShape bpmnElement="re_attend_start" id="Shape-re_attend_start">
+        <dc:Bounds height="32.0" width="32.0" x="105.0" y="135.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="32.0" width="32.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="re_attend_approve" id="Shape-re_attend_approve">
+        <dc:Bounds height="55.0" width="85.0" x="300.0" y="140.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="55.0" width="85.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="re_attend_end" id="Shape-re_attend_end">
+        <dc:Bounds height="32.0" width="32.0" x="460.0" y="240.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="32.0" width="32.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="re_attend_user" id="Shape-re_attend_user">
+        <dc:Bounds height="55.0" width="85.0" x="295.0" y="40.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="55.0" width="85.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="_3" id="BPMNEdge__3" sourceElement="re_attend_start" targetElement="re_attend_user">
+        <di:waypoint x="137.0" y="151.0"/>
+        <di:waypoint x="295.0" y="67.5"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_4" id="BPMNEdge__4" sourceElement="re_attend_user" targetElement="re_attend_exaime">
+        <di:waypoint x="340.0" y="95.0"/>
+        <di:waypoint x="340.0" y="140.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_6" id="BPMNEdge__6" sourceElement="re_attend_exaime" targetElement="re_attend_end">
+        <di:waypoint x="385.0" y="167.5"/>
+        <di:waypoint x="460.0" y="256.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>
